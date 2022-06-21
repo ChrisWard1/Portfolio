@@ -1,0 +1,44 @@
+body{
+  background-color:#1F45FC;
+  width: 600 px;
+  height: 600px;
+  color:white;
+  font-family:'Times New Roman', Times, serif;
+  font-size:18px;
+}
+h1 {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 1px 3px #FCD71E;
+}
+h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 1px 3px #FCD71E;
+}
+ div {
+  background: url("/image/Deer Pic.jpg" ) no-repeat center;
+  background-size: cover;
+  opacity: 1.0;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  border:2px solid black;
+}
+p {
+  margin: auto;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 3px #FCD71E;
+
+}
+table{
+  margin: auto;
+  text-align: left;
+  background-color: #FCD71E;
+  opacity: 0.9;
+  color: black;
+  width: 450px;
+  border:2px solid black;
+}

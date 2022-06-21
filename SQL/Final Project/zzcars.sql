@@ -1,0 +1,103 @@
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+-- disables foreign key checks
+
+set sql_safe_updates=0;
+
+CREATE DATABASE zzcars;
+
+USE zzcars; 
+
+DROP TABLE IF EXISTS BillingDetails; 
+
+CREATE TABLE IF NOT EXISTS BillingDetails (
+BillNumber INT NOT NULL UNIQUE,
+Serv_ID INT NOT NULL,
+bDate DATE NOT NULL,
+CustomerName VARCHAR(255) NOT NULL,
+Make VARCHAR(255) NOT NULL,
+Model VARCHAR(255) NOT NULL,
+Repairs VARCHAR(255) NOT NULL,
+LaborCost INT NOT NULL,
+PartsCosts INT NOT NULL,
+BillTotal INT NOT NULL,
+RemainingBalance INT NOT NULL,
+PRIMARY KEY (BillNumber),
+FOREIGN KEY (Serv_ID) REFERENCES MechWorkedOnServices (ServiceID)
+); 
+
+DROP TABLE IF EXISTS CustomerAndCars; 
+
+CREATE TABLE IF NOT EXISTS CustomerAndCars (
+CustomerID INT NOT NULL UNIQUE,
+ServID INT NOT NULL,
+CustomerName VARCHAR(255) NOT NULL,
+StreetAddress VARCHAR(255) NOT NULL,
+ZipCode INT NOT NULL,
+Email VARCHAR(255) NOT NULL,
+Phone VARCHAR(255) NOT NULL,
+Make VARCHAR(255) NOT NULL,
+Model VARCHAR(255) NOT NULL,
+Year YEAR NOT NULL,
+VIN VARCHAR(255) NOT NULL,
+Mileage INT NOT NULL,
+PRIMARY KEY (CustomerID)
+);
+
+DROP TABLE IF EXISTS PartsUsedInServices; 
+
+CREATE TABLE IF NOT EXISTS PartsUsedInServices (
+Servi_ID INT NOT NULL UNIQUE,
+Part_ID INT NOT NULL,
+Date DATE NOT NULL,
+PartDescription VARCHAR(255) NOT NULL,
+QuantityUsed INT NOT NULL,
+Price INT NOT NULL,
+TotalPartsCost INT NOT NULL,
+PRIMARY KEY (Servi_ID),
+FOREIGN KEY (Part_ID) REFERENCES PartsInventoryAndVendors (PartID)
+); 
+
+DROP TABLE IF EXISTS MechWorkedOnServices; 
+
+CREATE TABLE IF NOT EXISTS MechWorkedOnServices (
+ServiceID INT NOT NULL UNIQUE,
+Date DATE NOT NULL,
+MechName VARCHAR(255) NOT NULL,
+WorkTime INT NOT NULL,
+MechChangeHr INT NOT NULL,
+MechCostWTxCharge INT NOT NULL,
+PRIMARY KEY (ServiceID),
+FOREIGN KEY (ServiceID) REFERENCES BillingDetails (Serv_ID)
+); 
+
+DROP TABLE IF EXISTS PartsInventoryAndVendors; 
+
+CREATE TABLE IF NOT EXISTS PartsInventoryAndVendors (
+PartID INT NOT NULL UNIQUE,
+PartDescription VARCHAR(255) NOT NULL,
+Price INT NOT NULL,
+AvailableQuantity INT NOT NULL,
+VendorAddress VARCHAR(255),
+VendorPhone VARCHAR(255),
+PRIMARY KEY (PartID)
+); 
+
+DROP TABLE IF EXISTS TicketsAndAssociatedServices; 
+
+CREATE TABLE IF NOT EXISTS TicketsAndAssociatedServices (
+TicketID INT NOT NULL UNIQUE,
+tDate VARCHAR(255) NOT NULL,
+CustomerName VARCHAR(255) NOT NULL,
+VIN VARCHAR(255) NOT NULL,
+IssueDescription VARCHAR(255) NOT NULL,
+ServicID INT NOT NULL,
+AbbvrevServiceDescription VARCHAR(255) NOT NULL,
+LaborCosts INT NOT NULL,
+PartsCosts INT NOT NULL,
+PRIMARY KEY (TicketID),
+FOREIGN KEY (ServicID) REFERENCES BillingDetails (Serv_ID)
+);
+set sql_safe_updates=1;
+
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+-- enables foreign key checks

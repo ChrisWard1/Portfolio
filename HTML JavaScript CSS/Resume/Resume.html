@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=.8">
+    <title>Document</title>
+</head>
+<style>
+         :root
+            {
+                box-sizing: grid;
+            }
+            
+            *,
+            ::before,
+            ::after{
+                box-sizing: grid;                
+            }
+
+             .container {
+               
+                max-width: 800px;
+                width: 80%;
+                margin: auto;
+                background-color: black;
+                display:auto;
+            }
+
+            .item1 { grid-area: header; }
+            .item2 { grid-area: item2; }
+            .item3 { grid-area: item3; }
+            .item4 { grid-area: item4; }
+            .item5 { grid-area: item5; }
+            .item6 { grid-area: item6; }
+            .item7 { grid-area: item7; }
+            .item8 { grid-area: item8; }
+            .item9 { grid-area: item9; }
+            .item12 { grid-area: footer; }
+
+            .grid-container {
+            display: grid;
+
+            grid-template-areas:
+                'header header header header header header header header header header header header'                
+                'item2 item2 item2 item6 item6 item6 item6 item6 item6 item6 item6 item6'                
+                'item3 item3 item3 item7 item7 item7 item7 item7 item7 item7 item7 item7'                
+                'item4 item4 item4 item8 item8 item8 item8 item8 item8 item8 item8 item8'                
+                'item5 item5 item5 item9 item9 item9 item9 item9 item9 item9 item9 item9'                
+                'item5 item5 item5 item9 item9 item9 item9 item9 item9 item9 item9 item9'
+                'footer footer footer footer footer footer footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: white;  
+            padding: 40px;
+            }
+
+            .grid-container > div {
+            background-color: white;
+            text-align: left;
+            padding: 20px;
+            font-size: 1em;
+            }
+
+            header{
+                display:table;
+                width:80%;
+                background-color: white;
+                color: rgb(44, 42, 42);
+                padding: 0;
+                
+            }
+
+            .item12 {
+                display:table;                
+                font-size: .65em;
+                background-color: white;
+                color: gb(65, 60, 60);
+                margin: auto;
+                text-align: center;
+                
+            }
+            .item12 li{
+                
+                display:inline-block;
+                /* display: list-item; */
+                list-style: disc;
+            }
+
+              body{
+                
+                width:80%;
+                margin: auto;
+                background-color: black;
+                color: rgb(65, 60, 60);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:100;
+                padding: ;
+            }  
+            .item2, .item3, .item4, .item5  {
+                color:rgb(0, 110, 255);
+                font-size: .83em;                
+            }
+
+            a{
+
+                text-decoration: none;
+                color: black;
+            }
+
+            li {
+                list-style-type: none;
+                text-align: left;
+            }
+
+            h1,h3{
+                color: rgb(90, 83, 83);
+            }
+
+            b{
+                color: rgb(90, 83, 83);
+            }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="grid-container">
+        <div class="item1">
+            <h1 >chris <span style="color:rgb(0, 110, 255)">ward</span></h1>
+            Ropesville, Tx 79358 <br>           
+            <b>CELL</b>(806)-239-2990 
+            
+            <b>EMAIL: </b><a href="mailto:ChrisWard79358@gmail.com">ChrisWard79358@gmail.com</a> 
+            
+            <a href="https://www.linkedin.com/in/chris-ward-5356a223/">LinkedIn</a></sub>
+            
+            </div>
+        <div class="item2"><br>OBJECTIVE</div>
+        <div class="item6"><ul>Experienced technician and supervisor looking to make a career change. I am currently working towards my BBA in CIS at West Texas A&M and will graduate May 2022.
+        </ul></div>
+        
+        <div class="item3"><br>EDUCATION</div>
+        <div class="item7">
+                <ul>
+                    <li>West Texas A&M University	Canyon, Texas BBA in Computer Information Systems May 2022</li>
+                    <li>South Plains College	Levelland, Tx Computer Science	May 2008</li> 
+                </ul>
+            </div>
+        
+            <div class="item4"><br>SKILLS</div>
+            <div class="item8">
+            <ul>  
+                <li> Earned the Comptia A+ and Network+ Certification</li>
+                <li> Supervised 23 people</li>
+                <li> Dedicated to technology and lifelong learning</li>
+                <li> U.S. Air Force Veteran</li>
+                <li> Working to complete Datacamp.com - Data Analyst with SQL Server</li>
+                <li> Computer Languages C#, Html/CSS/JavaScript, SQL, C++</li>
+                <li> Business Classes: Financial Accounting, Managerial Accounting, Finance, Business Law, Business Statistics</li>
+            </ul> 
+        </div>
+        
+        <div class="item5"><br>EXPERIENCE</div>
+        <div class="item9">
+            <ul><h3>Occidental Petroleum	Denver City, Texas</h3>
+                     <b>Production Technician III	Jul 2017 - May 2021</b>
+                        <li>Reduced CO2 and hydrocarbon emissions by 470% by making changes to the production facility operation. Most changes went against conventional wisdom</li>
+                        <li>Constructed PI Screens for other employees</li>
+                        <li>Reduced the frequency of upsets at the production facility assigned</li>
+                        <li>Supervised contractors working on location</li>
+                        <li>Coordinated daily activities at assigned leases</li></ul>
+
+                <ul><h3>Halliburton Energy Services	Brownfield, Texas</h3>
+                    <b>Electronic Technician III	Jan 2011 – Jul 2017</b>
+                        <li>Performed the Foreman role, supervised 23 Technicians in a working lead role</li>
+                        <li>Set up, repaired, and configured rugged computer networks with Satellite uplink, the system was subnetted into 4 interconnecting networks.</li>
+                        <li>Configured layer 2 and layer 3 network switches. Created images of switch configurations </li>
+                        <li>Maintained, set up, re-imaged and repaired Systel servers and Daisy Data computers</li>
+                        <li>Built and repaired network cabling</li>
+                        <li>Developed and implemented section policies regarding set up procedures and other maintenance activities</li>
+                        <li>Built a windows-based data acquisition unit on a truck mounted platform</li>
+                    </ul>
+
+                <ul><h3>Raytheon – Elcan Optical Technologies	Richardson, Texas</h3>
+                    <b> Equipment Support Technician, Sr	Apr 2009 - Sept 2010</b>
+                        <li>Repaired, maintained, and modified high vacuum vapor deposition optical coating machines</li>
+                        <li>Six Sigma Specialist certified</li></ul>
+                        
+                <ul><h3>X-Fab Texas Inc.	Lubbock, Texas</h3>
+                     <b>Engineer Technician/Repair and Maintenance Tech.	Mar 2004 - Oct 2008</b>
+                        <li> Lead Technician for my shift</li>
+                        <li>Developed and monitored a process to decrease nonconforming material</li>
+                        <li>Controlled the process using statistical process control with minimal assistance from the engineer</li>
+                        <li>Developed procedures and trained the operators</li>
+                    </ul>
+
+                <ul><h3>Cingular Wireless	Lubbock, Texas</h3>
+                     <b>Service Representative	Dec 2003 - Mar 2004</b>
+                        <li>Receive inbound customer calls in regards to billing and cell phone technical equipment issues</li>
+                    </ul>
+
+                <ul><h3>Coca Cola Enterprises	Lubbock, Texas</h3>
+
+                    <b>Service Technician III	Sep 1997 - Sep 1999</b>
+                        <li>Repair and sustain vending equipment at customer locations</li>
+                    </ul>
+
+
+                <ul><h3> Bair Foundation	Lubbock, Texas</h3>
+
+                    <b>Therapeutic Foster Parent	Dec 1996 -Sep 1997</b>
+                        <li>Coordinated care and executed treatment plans for children assigned</li>
+                    </ul>
+
+                <ul><h3> U.S. Air Force	Denver City, Texas</h3>
+
+                     <b>Aircraft Maintenance Journeyman	Jul 1991 - Dec 1996</b>
+                        <li>Repaired and maintained C-130H/E aircraft</li> 
+                    </ul>
+                </div>
+
+                <div class="item12">  
+            <ul><sub><li>6114 Leopard Rd</li>
+            <li>Ropesville, Tx 79358</li>            
+            <li><b>CELL</b>(806)-239-2990</li> <li><b>EMAIL</b><a href="mailto:ChrisWard79358@gmail.com">ChrisWard79358@gmail.com</a></li> </sub> 
+            </ul></div>
+        
+        
+</div>
+    </div>
+    
+</body>
+</html>

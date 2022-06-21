@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		/*This function accepts input from the
+    screen and calculates the total volume
+    of oil produced*/
+
+   function calcTotal(){
+    var total= 0; //Variable used to store the value of the LVOL totals
+    var tankTotal =0;//variable used to store the difference in tank volume based on level
+    var adjTot = 0; //variable used to store the value in barrels of the change in the tank oil level
+   
+
+    var yestNumb = document.getElementById("yTot").value; //reads yesterday's total from the text box
+    var todNumb = document.getElementById("tTot").value;  //reads today's total from the text box
+    var yestHeight = document.getElementById("yTank").value;  //reads yesterday's tank level from the screen
+    var todayHeight = document.getElementById("tTank").value; //reads yesterday's tank level from the screen
+
+    /*Used to check if the numbers are entered backwards.
+     Todays reading should be equal to or greater than yesterdays readings
+     if yesterdays are higher than todays, there is either a machine 
+     malunction or reverse flow through the lact*/
+    total=todNumb-yestNumb; //calculates the total volume sold through the L.A.C.T.
+    
+    /*Calculates the total change in volume in the tank. Negatives are 
+    allowed because the tanks can be at a lower or higher level than yesterday*/
+
+    tankTotal= (yestHeight-todayHeight)*31.25;
+      
+    adjTot = total - tankTotal; //formula used to add or subtract the change in the oil volume sold
+  
+        if(yestNumb>todNumb){
+                      /*This function sets an alert for the user, the numbers are either entered wrong or there is a machine malfunction. Used an alert so the user can fix the answer instead of having to redo everything */
+         document.getElementById("demo").innerHTML ="<b>The numbers are entered incorrectly or there is a LACT malfunction </b>";
+        }else{
+    document.getElementById("demo").innerHTML ="Today's total production is "+ adjTot +" bbls";//used to output the calculated oil production
+        }
+    }
+	</script>
+
+	<title>Bennett Ranch Production</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div style="image">
+		<h1>Bennett Ranch Unit</h1>
+		<p><b>
+			Use the boxes below to calculate the daily production for the Bennett Ranch Battery. The LVOL can be found on the coriolis
+			display next to the L.A.C.T.</b>
+		</p><br>
+
+		<table>
+		  <tr><td>Today's LVOL </td><td><input type="number" name="lvol" id="tTot"></td><td> counts </td></tr>
+      <tr><td>Yesterday's LVOL </td><td><input type="number" name="lvol" id="yTot"></td><td> counts </td></tr>
+      <tr><td>Today's Run Tank Level </td><td><input type="number" name="lvol" id="tTank" ></td><td> feet </td></tr>
+      <tr><td>Yesterday's Run Tank Level </td><td><input type="number" name="lvol" id="yTank"></td><td> feet </td></tr>
+      </table>
+      <br>
+
+    <input type="submit" value="Calculate Total" onClick="calcTotal()";><br><br>
+    
+     <h2 id="demo"></h2>
+</div>
+   </body>
+</html>
