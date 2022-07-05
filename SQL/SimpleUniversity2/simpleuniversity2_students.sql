@@ -33,7 +33,7 @@ INSERT INTO students VALUES (3,'Jermayne','Merrisson','jmerrisson2@slideshare.ne
 INSERT INTO students VALUES (4,'Jim','Cabral','jcabral3@omniture.com','Male','2000-02-22 00:00:00','14 Mcbride Parkway','723-34-1360',NULL,6);
 INSERT INTO students VALUES (5,'Blinny','Murt','bmurt4@mozilla.org','Female','1999-07-09 00:00:00','8 Ronald Regan Drive','748-83-1849',NULL,2);
 INSERT INTO students VALUES (6,'Bab','Grimwade','bgrimwade5@vk.com','Female','1989-10-19 00:00:00','9 Westend Avenue','830-34-9553',9,8);
-INSERT INTO students VALUES (7,'Alf','O\'Nolan','aonolan6@usgs.gov','Male','1989-01-06 00:00:00','5 Golf View Plaza','706-61-1868',6,7);
+INSERT INTO students VALUES (7,'Alf','Nolan','aonolan6@usgs.gov','Male','1989-01-06 00:00:00','5 Golf View Plaza','706-61-1868',6,7);
 INSERT INTO students VALUES (8,'Leland','Whitmarsh','lwhitmarsh7@wikipedia.org','Male','1996-12-28 00:00:00','0 Del Sol Drive','529-15-8531',NULL,NULL);
 INSERT INTO students VALUES (9,'Dottie','MacCauley','dmaccauley8@webeden.co.uk','Female','1984-05-17 00:00:00','789 Washington Alley','890-29-0914',NULL,10);
 INSERT INTO students VALUES (10,'Erik','Brundrett','ebrundrett9@163.com','Male','1980-07-27 00:00:00','5 Dapin Alley','364-08-7453',3,2);
@@ -442,7 +442,7 @@ INSERT INTO students VALUES (412,'Dorothee','Lourens','dlourensbf@hostgator.com'
 INSERT INTO students VALUES (413,'Dennis','Matteau','dmatteaubg@irs.gov','Male','1998-01-23 00:00:00','5833 Maryland Plaza','260-14-2183',7,6);
 INSERT INTO students VALUES (414,'Mozes','Houlridge','mhoulridgebh@g.co','Male','1981-10-08 00:00:00','3 Waywood Drive','481-57-8786',7,2);
 INSERT INTO students VALUES (415,'Rutter','Gitthouse','rgitthousebi@sfgate.com','Male','1980-08-17 00:00:00','02737 Kipling Way','114-06-2492',5,9);
-INSERT INTO students VALUES (416,'Zoe','O\'Cuddie','zocuddiebj@google.co.uk','Female','1993-07-28 00:00:00','04 Grasskamp Way','645-56-1964',NULL,1);
+INSERT INTO students VALUES (416,'Zoe','Cuddie','zocuddiebj@google.co.uk','Female','1993-07-28 00:00:00','04 Grasskamp Way','645-56-1964',NULL,1);
 INSERT INTO students VALUES (417,'Ford','Friedman','ffriedmanbk@oakley.com','Male','1984-09-14 00:00:00','39 Crowley Park','744-41-8805',5,10);
 INSERT INTO students VALUES (418,'Shelden','Verman','svermanbl@tinyurl.com','Male','1998-11-06 00:00:00','608 Lotheville Lane','367-46-5946',NULL,2);
 INSERT INTO students VALUES (419,'Nelle','Doe','ndoebm@wix.com','Female','1984-12-11 00:00:00','09 Schiller Road','529-21-9547',6,8);
@@ -505,7 +505,7 @@ INSERT INTO students VALUES (475,'Turner','Swaden','tswadend6@msu.edu','Male','1
 INSERT INTO students VALUES (476,'Loella','Sewart','lsewartd7@ox.ac.uk','Female','1994-06-06 00:00:00','97637 Warrior Point','825-37-1812',4,9);
 INSERT INTO students VALUES (477,'Cacilie','Hosten','chostend8@npr.org','Female','1994-06-12 00:00:00','6656 Orin Lane','189-32-4532',4,8);
 INSERT INTO students VALUES (478,'Dorolice','Singyard','dsingyardd9@mayoclinic.com','Female','1981-11-04 00:00:00','8 Graceland Way','819-71-9203',NULL,1);
-INSERT INTO students VALUES (479,'Padraig','O\'Kieran','pokieranda@ebay.com','Male','1983-01-16 00:00:00','5119 Merry Street','413-25-7915',NULL,10);
+INSERT INTO students VALUES (479,'Padraig','Kieran','pokieranda@ebay.com','Male','1983-01-16 00:00:00','5119 Merry Street','413-25-7915',NULL,10);
 INSERT INTO students VALUES (480,'Brnaby','Tilio','btiliodb@amazon.de','Male','1999-02-04 00:00:00','5 Troy Center','563-72-1552',NULL,3);
 INSERT INTO students VALUES (481,'Wilhelmine','Dahill','wdahilldc@feedburner.com','Female','1995-11-01 00:00:00','062 Hudson Road','258-64-3723',8,NULL);
 INSERT INTO students VALUES (482,'Tamar','Piegrome','tpiegromedd@eventbrite.com','Female','1989-06-18 00:00:00','81870 Walton Plaza','486-51-4600',5,3);
@@ -660,7 +660,7 @@ INSERT INTO students VALUES (630,'Albina','Fleay','afleayhh@github.io','Female',
 INSERT INTO students VALUES (631,'Ricca','Dommett','rdommetthi@wordpress.com','Female','1984-01-13 00:00:00','83386 Hauk Center','333-37-9456',10,9);
 INSERT INTO students VALUES (632,'Dagmar','Tybalt','dtybalthj@globo.com','Female','1993-09-11 00:00:00','1 Fair Oaks Road','587-05-9019',6,7);
 INSERT INTO students VALUES (633,'Donalt','Churchin','dchurchinhk@lulu.com','Male','2000-04-26 00:00:00','255 Kedzie Center','595-32-7808',8,4);
-INSERT INTO students VALUES (634,'Alfred','O\' Hogan','aohoganhl@answers.com','Male','1990-06-22 00:00:00','05 Arapahoe Street','795-35-0788',8,9);
+INSERT INTO students VALUES (634,'Alfred',' Hogan','aohoganhl@answers.com','Male','1990-06-22 00:00:00','05 Arapahoe Street','795-35-0788',8,9);
 INSERT INTO students VALUES (635,'Hamel','Jeckells','hjeckellshm@tuttocitta.it','Male','1998-12-05 00:00:00','25 Main Parkway','550-90-1626',NULL,6);
 INSERT INTO students VALUES (636,'Mufi','Attaway','mattawayhn@scribd.com','Female','1992-01-14 00:00:00','69 Northwestern Drive','338-77-4295',2,5);
 INSERT INTO students VALUES (637,'Tisha','Ison','tisonho@cnbc.com','Female','1983-10-18 00:00:00','2 Haas Junction','130-10-3473',9,10);
@@ -757,7 +757,7 @@ INSERT INTO students VALUES (727,'Sandye','Varran','svarrank6@admin.ch','Female'
 INSERT INTO students VALUES (728,'Florri','Bramich','fbramichk7@last.fm','Female','1985-12-30 00:00:00','8 Jenna Plaza','370-60-9256',NULL,8);
 INSERT INTO students VALUES (729,'Jude','Nudd','jnuddk8@dion.ne.jp','Male','1989-01-06 00:00:00','27316 Arkansas Point','103-57-4484',5,7);
 INSERT INTO students VALUES (730,'Rickard','Rhys','rrhysk9@ebay.com','Male','1981-06-16 00:00:00','2 Bowman Pass','132-24-2419',NULL,8);
-INSERT INTO students VALUES (731,'Tandi','O\'Shesnan','toshesnanka@myspace.com','Female','1981-08-04 00:00:00','124 Acker Plaza','408-73-6667',NULL,1);
+INSERT INTO students VALUES (731,'Tandi','Shesnan','toshesnanka@myspace.com','Female','1981-08-04 00:00:00','124 Acker Plaza','408-73-6667',NULL,1);
 INSERT INTO students VALUES (732,'Chrisy','Ubsdell','cubsdellkb@forbes.com','Male','1993-06-17 00:00:00','25 Old Shore Trail','192-41-3427',NULL,6);
 INSERT INTO students VALUES (733,'Barrie','Findlay','bfindlaykc@bloglovin.com','Male','1995-10-06 00:00:00','14 Kingsford Junction','593-74-8640',NULL,9);
 INSERT INTO students VALUES (734,'Ange','Boyer','aboyerkd@dedecms.com','Male','1997-10-26 00:00:00','596 Maple Point','787-32-2830',NULL,5);
@@ -769,7 +769,7 @@ INSERT INTO students VALUES (739,'Wenona','Hambleton','whambletonki@engadget.com
 INSERT INTO students VALUES (740,'Flin','Clewarth','fclewarthkj@cam.ac.uk','Male','1995-12-27 00:00:00','75 Paget Lane','665-69-9955',NULL,8);
 INSERT INTO students VALUES (741,'Elita','Pasterfield','epasterfieldkk@wiley.com','Female','1999-03-23 00:00:00','63332 Barby Pass','891-18-8465',NULL,9);
 INSERT INTO students VALUES (742,'Frank','Angus','fanguskl@slideshare.net','Male','1989-03-11 00:00:00','44867 Hermina Road','184-29-9769',4,9);
-INSERT INTO students VALUES (743,'Eula','M\'Chirrie','emchirriekm@google.com.hk','Female','1982-02-24 00:00:00','69 Upham Lane','116-71-9324',2,8);
+INSERT INTO students VALUES (743,'Eula','Chirrie','emchirriekm@google.com.hk','Female','1982-02-24 00:00:00','69 Upham Lane','116-71-9324',2,8);
 INSERT INTO students VALUES (744,'Mira','Corse','mcorsekn@tuttocitta.it','Female','1996-02-10 00:00:00','1 Duke Point','728-79-9867',NULL,4);
 INSERT INTO students VALUES (745,'Aldric','Rummings','arummingsko@printfriendly.com','Male','1995-08-16 00:00:00','8 Autumn Leaf Park','875-97-2898',NULL,4);
 INSERT INTO students VALUES (746,'Arleyne','Gowan','agowankp@businesswire.com','Female','1990-03-11 00:00:00','0 Mendota Circle','735-78-6574',NULL,7);
